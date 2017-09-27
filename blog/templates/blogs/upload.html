@@ -1,0 +1,12 @@
+{% load bootstrap3 %}
+{% bootstrap_css %}
+
+<h1 class='text-center'> Upload File </h1>
+<div class='container'>
+	<form class='form' enctype='multipart/form-data' method='POST'>
+		{#{ form.title }#}
+		{{ form.file }}
+		<br/><br/>
+		<input type='submit' value='上传文件'/>
+	</form>
+</div>
